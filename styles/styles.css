@@ -1,0 +1,472 @@
+/* This is to style all websites
+Author: Tully Sharpe, Nhat Anh Dang */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #18191A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  text-align: center;
+  line-height: 1.25;
+  animation: fade-up 650ms 400ms backwards;
+  color: white;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+}
+
+/* set the header and footer fixed */
+.fixed-header,
+.fixed-footer {
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  background: #000;
+  opacity: 99%;
+  padding: 10px 0;
+  z-index: 10;
+}
+.fixed-header {
+  top: 0;
+  background: rgb(67, 67, 67);
+  background: linear-gradient(0deg, #18191a 20%, rgb(0, 0, 0) 90%);
+}
+.fixed-footer {
+  bottom: 0;
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+  background: rgb(67, 67, 67);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, #18191a 90%);
+}
+
+/* footer style */
+.footer-style:link, .footer-style:visited {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+.footer-style:hover {
+  color: #016064;
+}
+
+/* fade up animation for every page on website  */
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* underline animation for navigation bar  */
+.link__hover-effect:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  right: 0;
+  transition: all 200ms ease;
+}
+
+.link__hover-effect--white:after {
+  background-color: #fff;
+}
+
+.link__hover-effect:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* alignment and animation */
+table {
+  text-align: center;
+  margin: 0 auto;
+  animation: fade-up 650ms 400ms backwards;
+}
+/* alignment and animation */
+dl {
+  text-align: center;
+  animation: fade-up 650ms 400ms backwards;
+}
+/* alignment and animation */
+figure {
+  text-align: center;
+  margin: 0 auto;
+  animation: fade-up 650ms 400ms backwards;
+}
+
+/* figure caption image size and align */
+.imagesize {
+  height: 500px;
+  width: 800px;
+}
+figcaption {
+display: block;
+text-align: center;
+color:#fff;
+}
+
+/* alignment and animation */
+li {
+  text-align: center;
+  list-style-type: none;
+  animation: fade-up 650ms 400ms backwards;
+  color: white;
+}
+
+/* ordered list style */
+
+ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+  display: list-item;
+}
+
+/* alignment and animation */
+p {
+  line-height: 1.5;
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  animation: fade-up 650ms 400ms backwards;
+  color: white;
+}
+
+fieldset {
+  line-height: 1.5;
+  font-size: 16px;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  animation: fade-up 650ms 400ms backwards;
+  background-color: #242526;
+}
+/* alignment and animation */
+img {
+  margin: 0 auto;
+  text-align: center;
+  animation: fade-up 650ms 400ms backwards;
+}
+/* alignment and animation */
+.nav__link {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link--anchor {
+  margin: 0 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav__link--list {
+  display: flex;
+}
+/* background image and header on index page */
+#index-bg-image {
+  color: #fff;
+  padding: 20em;
+  background-size: 100%;
+  background-position: center;
+  background-image: url("../styles/images/image1.jpg");
+  background-repeat: no-repeat;
+  animation: fade-up 650ms 400ms backwards;
+}
+
+#index-header {
+  font-family: "Montserrat";
+  font-size: 60px;
+}
+
+/* background images and text specification for headings on topic page */
+
+.bg-image-1 {
+  color: white;
+  padding: 10em;
+  background-size: 150%;
+  background-image: url("../styles/images/1.jpg");
+  background-repeat: no-repeat;
+  float: left;
+  width: 50%;
+  height: 440px;
+}
+
+.bg-image-2 {
+  color: white;
+  padding: 10em;
+  background-size: 120%;
+  background-image: url("../styles/images/2.jpg");
+  background-repeat: no-repeat;
+  float: right;
+  width: 50%;
+  height: 400px;
+}
+
+.bg-image-3 {
+  color: white;
+  padding: 10em;
+  background-size: 120%;
+  background-image: url("../styles/images/3.jpg");
+  background-repeat: no-repeat;
+  float: left;
+  width: 50%;
+  height: 400px;
+}
+
+.bg-image-4 {
+  color: white;
+  padding: 10em;
+  background-size: 120%;
+  background-image: url("../styles/images/4.jpg");
+  background-repeat: no-repeat;
+  float: right;
+  width: 50%;
+  height: 400px;
+}
+
+/* text animation */
+.topic {
+  animation: fade-up 650ms 400ms backwards;
+}
+
+/* container of the p text */
+.text-container {
+  display: inline-block;
+  width: 50%;
+  height: 400px;
+  text-align: justify;
+  padding: 60px 60px;
+  color: white;
+}
+
+.text-container-1 {
+  display: inline-block;
+  width: 50%;
+  height: 400px;
+  text-align: justify;
+  padding: 100px 60px;
+  color: white;
+}
+
+.text-container-2 {
+  color: #fff;
+  font-size: 35px;
+  display: inline-block;
+  background: #000;
+  width: 100%;
+  height: 200px;
+  text-align: justify;
+  padding: 80px 60px;
+}
+
+.text-container-2:hover {
+  background-color: #016064;
+}
+
+.text-container-3-1 {
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+  text-align: justify;
+  padding: 40px 60px;
+  color: white;
+  border-radius: 10px;
+  background: #242526;
+}
+
+.text-container-3-2 {
+  display: inline-block;
+  width: 100%;
+  height: 250px;
+  text-align: justify;
+  padding: 45px 60px;
+  color: white;
+  border-radius: 10px;
+  background: #242526;
+}
+
+/* table background color */
+table, th, td {
+  border: 1px solid;
+}
+
+th {
+  background-color: #016064;
+}
+
+td {
+  background-color: #000;
+}
+
+/* aside style */
+aside {
+  text-align: justify;
+  font-style: italic;
+  float: right;
+  width: 30%;
+  border: 1px solid #fff;
+  padding: 15px 15px;
+  margin-right: 20px;
+}
+
+/* youtube video position */
+.youtube-video {
+  width: 100%;
+  height: 600px;
+  animation: fade-up 650ms 400ms backwards;
+  display: inline-block;
+  padding: 0px 100px;
+  border: 0px;
+}
+
+/* text appear on hover image 5 topic page */
+#example {
+  cursor: pointer;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
+
+#example .fadedbox {
+  background-color: #016064;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+}
+#example:hover .fadedbox {
+  opacity: 0.9;
+}
+#example .text {
+  transition: all 300ms ease-out;
+  transform: translateY(30px);
+}
+#example .title {
+  font-size: 20px;
+  padding: 40px 30px;
+  text-align: justify;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+}
+#example:hover .title,
+#example:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* text appear on hover image 6 topic page */
+
+#example-2 {
+  cursor: pointer;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  text-align: center;
+  float: right;
+}
+#example-2 .fadedbox {
+  background-color: #016064;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+}
+#example-2:hover .fadedbox {
+  opacity: 0.9;
+}
+#example-2 .text {
+  transition: all 300ms ease-out;
+  transform: translateY(30px);
+}
+#example-2 .title {
+  font-size: 20px;
+  padding: 40px 30px;
+  text-align: justify;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+}
+#example-2:hover .title,
+#example-2:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* horizontal line style before citing references */
+hr {
+  width: 60%;
+  animation: fade-up 650ms 400ms backwards;
+}
+
+/* footnote style */
+.footnote {
+  display: inline-block;
+  padding: 20px 20px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* youtube link to presentation video */
+#presentation {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#presentation:hover {
+  color: #016064;
+}

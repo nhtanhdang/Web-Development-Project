@@ -1,0 +1,245 @@
+/* This is to style all websites
+Author: Tully Sharpe, Nhat Anh Dang */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #18191A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  text-align: center;
+  line-height: 1.25;
+  animation: fade-up 650ms 400ms backwards;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+}
+
+/* set the header and footer fixed */
+.fixed-header,
+.fixed-footer {
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  background: #000;
+  opacity: 99%;
+  padding: 10px 0;
+  z-index: 10;
+}
+.fixed-header {
+  top: 0;
+  background: rgb(67, 67, 67);
+  background: linear-gradient(0deg, #18191a 20%, rgb(0, 0, 0) 90%);
+}
+.fixed-footer {
+  bottom: 0;
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+  background: rgb(67, 67, 67);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, #18191a 90%);
+}
+
+/* footer style */
+.footer-style:link, .footer-style:visited {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+.footer-style:hover {
+  color: #016064;
+}
+
+/* pencil animation for emoji on about page */
+.pencil {
+  display: inline-block;
+  animation: animate-pencil 500ms infinite ease-in-out;
+}
+
+@keyframes animate-pencil {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+/* fade up animation for every page on website  */
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* underline animation for navigation bar  */
+.link__hover-effect:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  right: 0;
+  transition: all 200ms ease;
+}
+
+.link__hover-effect--white:after {
+  background-color: #fff;
+}
+
+
+.link__hover-effect:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* alignment and animation */
+table {
+  text-align: center;
+  margin: 0 auto;
+  animation: fade-up 650ms 400ms backwards;
+}
+
+/* alignment and animation */
+li {
+  text-align: center;
+  list-style-type: none;
+  animation: fade-up 650ms 400ms backwards;
+}
+
+/* alignment and animation */
+p {
+  line-height: 1.5;
+  font-size: 16px;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  animation: fade-up 650ms 400ms backwards;
+  color: white;
+}
+
+label {
+  line-height: 1.5;
+  font-size: 16px;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  animation: fade-up 650ms 400ms backwards;
+  color: white;
+}
+
+legend {
+  line-height: 1.5;
+  font-size: 16px;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  animation: fade-up 650ms 400ms backwards;
+  color: white;
+}
+
+fieldset {
+  line-height: 1.5;
+  font-size: 16px;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  animation: fade-up 650ms 400ms backwards;
+  background-color: #242526;
+}
+/* alignment and animation */
+img {
+  margin: 0 auto;
+  text-align: center;
+  animation: fade-up 650ms 400ms backwards;
+}
+/* alignment and animation */
+.nav__link {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link--anchor {
+  margin: 0 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav__link--list {
+  display: flex;
+}
+
+input[type=submit] {
+  background-color:#016064;
+  font-size: 15px;
+  border: none;
+  color: white;
+  padding: 20px 30px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 3px 5px;
+  animation: fade-up 650ms 400ms backwards;
+}
+
+input[type=reset] {
+  background-color:#016064;
+  font-size: 15px;
+  border: none;
+  color: white;
+  padding: 20px 30px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 3px 5px;
+  animation: fade-up 650ms 400ms backwards;
+}
+
+#submit {
+  border: none;
+  background-color: #18191a;
+}
+
+#quiz_attempt:link, #quiz_attempt:visited {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+input, textarea {
+  color: black;
+}
+
+.manage_button {
+  display: flex;
+  justify-content: center;
+}
+
